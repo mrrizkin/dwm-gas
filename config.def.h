@@ -6,6 +6,8 @@ static const Gap default_gap        = {.isgap = 1, .realgap = 10, .gappx = 10};
 static const unsigned int snap      = 32;       /* snap pixel */
 static const int showbar            = 1;        /* 0 means no bar */
 static const int topbar             = 1;        /* 0 means bottom bar */
+static const int horizpadbar        = 2;        /* horizontal padding for statusbar */
+static const int vertpadbar         = 2;        /* vertical padding for statusbar */
 static const char *fonts[]          = {
   "JetBrainsMono Nerd Font:pixelsize=10:antialias=true:autohint=true",
   "Blobmoji:pixelsize=10:antialias=true:autohint=true"
