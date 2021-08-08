@@ -21,11 +21,11 @@ static char selbgcolor[]            = "#005577";
 static char *colors[][3] = {
        /*               fg           bg           border   */
        [SchemeNorm] = { normfgcolor, normbgcolor, normbordercolor },
-       [SchemeSel]  = { selfgcolor,  selbgcolor,  selbordercolor  },
+       [SchemeSel]  = { selbgcolor,  normbgcolor,  selbordercolor  },
 };
 
 /* tagging */
-static const char *tags[] = { "1", "2", "3", "4", "5", "6", "7", "8", "9" };
+static const char *tags[] = { "", " ", " ", " ", " " };
 
 static const Rule rules[] = {
 	/* xprop(1):
@@ -63,7 +63,18 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor, NULL };
+static const char *dmenucmd[] = {
+  "dmenu_run",
+  "-c", "-i", /* center and incase sensitive */
+  "-l", "25", /* use column with max 25 line height */
+  "-m", dmenumon,
+  "-fn", dmenufont,
+  "-nb", normbgcolor,
+  "-nf", normfgcolor,
+  "-sb", selbgcolor,
+  "-sf", normbgcolor,
+  NULL
+};
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
