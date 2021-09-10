@@ -14,10 +14,10 @@ static const int topbar       = 1;  /* 0 means bottom bar */
 static const int horizpadbar  = 5;  /* horizontal padding for statusbar */
 static const int vertpadbar   = 10; /* vertical padding for statusbar */
 static const char *fonts[]    = {
-    "JetBrainsMono Nerd Font:pixelsize=10:antialias=true:autohint=true",
-    "Blobmoji:pixelsize=10:antialias=true:autohint=true"
+    "VictorMono Nerd Font:pixelsize=10:antialias=true:autohint=true",
+    "JoyPixels:pixelsize=10:antialias=true:autohint=true"
 };
-static const char dmenufont[] = "JetBrainsMono Nerd Font:pixelsize=10:antialias=true:autohint=true";
+static const char dmenufont[] = "VictorMono Nerd Font:pixelsize=12:antialias=true:autohint=true";
 static char normbgcolor[]     = "#222222";
 static char normbordercolor[] = "#444444";
 static char normfgcolor[]     = "#bbbbbb";
