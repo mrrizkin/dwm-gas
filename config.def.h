@@ -69,7 +69,22 @@ static const Layout layouts[] = {
 
 /* commands */
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
-static const char *dmenucmd[] = { "dmenu_run", "-m", dmenumon, "-fn", dmenufont, "-nb", col_gray1, "-nf", col_gray3, "-sb", col_cyan, "-sf", col_gray4, NULL };
+static const char *dmenucmd[] = {
+    "dmenu_run",
+    "-c", "-i", /* center and incase sensitive */
+    "-l", "25", /* show first 25 items in row */
+    "-m", dmenumon,
+    "-fn", dmenufont,
+    "-nb", col_gray1,
+    "-nf", col_gray3,
+    "-sb", col_orange,
+    "-sf", col_gray4,
+    "-nhb", col_cyan,
+    "-nhf", col_gray3,
+    "-shb", col_orange,
+    "-shf", col_gray4,
+    NULL
+};
 static const char *termcmd[]  = { "st", NULL };
 
 static Key keys[] = {
