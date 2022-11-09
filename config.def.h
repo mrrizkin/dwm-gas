@@ -18,11 +18,11 @@ static const char *fonts[]          = {
   "JoyPixels:pixelsize=10:antialias=true:autohint=true"
 };
 static const char dmenufont[]       = "JetBrainsMono Nerd Font:pixelsize=10:antialias=true:autohint=true";
-static const char col_gray1[]       = "#1C1C1C";
-static const char col_gray2[]       = "#0F0F0F";
-static const char col_gray3[]       = "#DDE1E3";
-static const char col_gray4[]       = "#2D2D2D";
-static const char col_cyan[]        = "#BFDBFE";
+static const char col_gray1[]       = "#1b1e28";
+static const char col_gray2[]       = "#171922";
+static const char col_gray3[]       = "#E4F0FB";
+static const char col_gray4[]       = "#767C9D";
+static const char col_cyan[]        = "#91B4D5";
 static const char *colors[][3]      = {
 	/*               fg         bg         border   */
 	[SchemeNorm] = { col_gray3, col_gray2, col_gray4 },
